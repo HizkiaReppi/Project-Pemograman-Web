@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #10101a;
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0b0b13;
+  padding: 24px 8%;
+  transition: 0.3s;
+}
+
+.logo {
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+span {
+  color: #F9004d;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #F9004d;
+  transition: .5s;
+}
+
+.border {
+  border-bottom: 2px solid #F9004d;
+  padding: 2px 0px;
+  transition: 0.5s ease-in-out;
+  width: 0px;
+}
+
+.navbar li:hover .border {
+  padding: 2px 0px;
+  transition: 0.5s ease-in-out;
+  width: 75%;
+}
+
+section {
+  padding: 100px 8%;
+}
+
+/* Beranda */
+
+.home {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  align-items: center;
+  background-color: #0b0b13;
+}
+
+.home-img img {
+  max-width: 100%;
+  width: 500px;
+  height: auto;
+  margin-top: 50px;
+}
+
+.home-text h5 {
+  color: white;
+  font-size: 35px;
+  font-weight: 500;
+  margin: 0 0 20px;
+}
+
+.home-text h1 {
+  font-size: 50px;
+  color: white;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0 0 20px;
+}
+
+.home-text h6 {
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background-color: #F9004d;
+  color: white;
+  box-shadow: 4px 4px white;
+  padding: 0 25px;
+  line-height: 42px;
+  display: inline-block;
+  border: 1px solid transparent;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  transition: ease all 0.35s;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #F9004d;
+  box-shadow: 4px 4px #F9004d;
+}
+
+/* Pendidikan */
+
+.education {
+  background-color: #10101a;
+  width: 100%;
+  padding: 100px 0;
+}
+
+.education .title h3 {
+  color: white;
+  font-size: 35px;
+  width: 1130px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.education-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.box {
+  background: #0b0b13;
+  width: 550px;
+  padding: 40px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.box h6 {
+  color: whitesmoke;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.box h4 {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 25px;
+  margin-bottom: 13px;
+}
+
+.box p {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 1.2rem;
+  line-height: 1.8rem;
+  color: whitesmoke;
+}
+
+.box h5 {
+  color: whitesmoke;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.box:hover {
+  transform: translateY(-15px);
+  box-shadow: 0px 15px 30px 0px rgb(0 0 0 / 70%);
+}
+
+/* Kontak */
+
+.contact {
+  background-color: #10101a;
+  width: 100%;
+  padding: 50px 0 100px;
+}
+
+.contact .title h3 {
+  color: white;
+  font-size: 35px;
+  width: 1130px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.contact-form form {
+  position: relative;
+  width: 550px;
+}
+
+.contact-form div {
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  display: none;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  outline: none;
+  background: #0b0b13;
+  color: white;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: white;
+}
+
+textarea {
+  resize: none;
+  height: 200px;
+}
+
+form .send-btn {
+  background-color: #F9004d;
+  color: white;
+  box-shadow: 4px 4px white;
+  padding: 0 25px;
+  line-height: 42px;
+  display: inline-block;
+  border: 1px solid transparent;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  transition: ease all 0.35s;
+  cursor: pointer;
+}
+
+form .send-btn:hover {
+  background-color: white;
+  color: #F9004d;
+  box-shadow: 4px 4px #F9004d;
+}
+
+/* Tentang */
+
+.about {
+  width: 100%;
+  padding: 20px 0px 100px;
+  background-color: #10101a;
+}
+
+.about_main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 1130px;
+  max-width: 95%;
+}
+
+.about img {
+  height: auto;
+  width: 430px;
+}
+
+.about_text {
+  width: 550px;
+}
+
+.about_text h2 {
+  color: white;
+  font-size: 75px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.about_text h5 {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+
+.about_text p {
+  color: whitesmoke;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+
+/* Copyright */
+
+.copyright {
+  text-align: center;
+  padding: 30px;
+  color: white;
+  background-color: #0b0b13;
+  line-height: 2.5px;
+}
